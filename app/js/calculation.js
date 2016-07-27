@@ -16,6 +16,15 @@ $().ready(function()
         $('#three').append('<p>' + multiple + 'x</p>');
         $('#four').append('<p>$ ' + total + '</p>');
         var all = total;
+
+        //
+        // Данные для графика положить в массив
+        // graphData = []
+        //
+        // при каждой итерации цикла делать:
+        // data.push([X,Y])
+        //
+
         for (var i = 0; i <= 10; ++i) {
             $('#year').append('<p> Year' + i + '</p>');
             var res = revenue;
