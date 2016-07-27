@@ -379,6 +379,14 @@
 										</tr>
 									</tbody>
 								</table>
+
+            <div class="portlet-body" style="width: 1200px; height: 300px">
+              <div id="chart_2" class="chart" style="height: 300px; width: 1200px">
+                <canvas class="flot-base" width="1200px" height="300px" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 1200px; height: 300px;"></canvas>
+                <canvas class="flot-overlay" width="1200px" height="300" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 1200px; height: 300px;"></canvas>
+              </div>
+              </div>
+
 								<div class="col-md-12">
 									<div class="text-center">
 
@@ -475,6 +483,106 @@
 	<script src="js/bootstrap-select.js"></script>
 	<script src="js/my_script.js"></script>
 	<script src="js/calculation.js"></script>
+
+  <script src="http://webdevelop.biz/sass2/app/js/graf.js"></script>
+  <script type="text/javascript">
+
+    function i(e, i, t) {
+              $('<div id="tooltip">' + t + "</div>").css({
+                  position: "absolute",
+                  display: "none",
+                  top: i + 5,
+                  left: e + 15,
+                  border: "1px solid #333",
+                  padding: "4px",
+                  color: "#fff",
+                  "border-radius": "3px",
+                  "background-color": "#333",
+                  opacity: .8
+              }).appendTo("body").fadeIn(200)
+          }
+
+    var graphData = [
+            [1, 10],
+            [2, 12],
+            [3, 15],
+            [4, 18],
+            [5, 22],
+            [6, 21],
+            [7, 25],
+            [8, 30],
+            [9, 35],
+            [10, 30],
+            [11, 35],
+            [12, 25],
+            [13, 15],
+        ];
+
+    // Запуск самого графика
+    var r = ($.plot($("#chart_2"), [{
+            data: graphData,
+            label: "Year investment",
+            lines: {
+                lineWidth: 1
+            },
+            shadowSize: 0
+        }], {
+            series: {
+                lines: {
+                    show: !0,
+                    lineWidth: 2,
+                    fill: !0,
+                    fillColor: {
+                        colors: [{
+                            opacity: .05
+                        }, {
+                            opacity: .01
+                        }]
+                    }
+                },
+                points: {
+                    show: !0,
+                    radius: 3,
+                    lineWidth: 1
+                },
+                shadowSize: 2
+            },
+            grid: {
+                hoverable: !0,
+                clickable: !0,
+                tickColor: "#eee",
+                borderColor: "#eee",
+                borderWidth: 1
+            },
+            colors: ["#d12610", "#37b7f3", "#52e136"],
+            xaxis: {
+                ticks: 11,
+                tickDecimals: 0,
+                tickColor: "#eee"
+            },
+            yaxis: {
+                ticks: 11,
+                tickDecimals: 0,
+                tickColor: "#eee"
+            }
+        }), null);
+
+        /*
+        Код для tooltips 
+        $("#chart_2").bind("plothover", function(e, t, a) {
+            if ($("#x").text(t.x.toFixed(2)), $("#y").text(t.y.toFixed(2)), a) {
+                if (r != a.dataIndex) {
+                    r = a.dataIndex, $("#tooltip").remove();
+                    var o = a.datapoint[0].toFixed(2),
+                        s = a.datapoint[1].toFixed(2);
+                    i(a.pageX, a.pageY, a.series.label + " of " + o + " = " + s)
+                }
+            } else $("#tooltip").remove(), r = null
+        });
+        */
+
+  </script>
+
 
 </body>
 </html>

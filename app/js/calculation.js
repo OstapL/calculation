@@ -16,6 +16,15 @@ $().ready(function()
         $('#three').append('<p>' + multiple + 'x</p>');
         $('#four').append('<p>$ ' + total + '</p>');
         var all = total;
+
+        // ToDo
+        // Данные для графика положить в массив
+        // graphData = []
+        //
+        // при каждой итерации цикла делать:
+        // data.push([X,Y])
+        //
+
         for (var i = 0; i <= 10; ++i) {
             $('#year').append('<p> Year' + i + '</p>');
             var res = revenue;
@@ -50,6 +59,35 @@ $().ready(function()
                 }
                 break;
             }
+
+            // ToDo
+            // let template = `<tr>
+            //   <th scope="row"></th>
+            //   <td><% time %></td>
+            //   <td><% fundraise %></td>
+            //   <td><% revenue %></td>
+            //   <td><% anuual %></td>
+            //   <td><% multiple %></td>
+            //   <td><% total %></td>
+            // </tr>`;
+            //
+            // для вывода новой строки нужно делать:
+            // $('table tr:last').append(
+            //  template.replace(
+            //      '<% time %>', 'Year 1'
+            //  ).replace(
+            //      '<% fundraise %>', 'Year 1'
+            //  ).replace(
+            //      '<% revenue %>', 'Year 1'
+            //  ).replace(
+            //      '<% annual %>', 'Year 1'
+            //  ).replace(
+            //      '<% multiple %>', 'Year 1'
+            //  ).replace(
+            //      '<% total %>', 'Year 1'
+            //  )
+            // );
+
             $('#one').append('<p>$ ' + revenue + '</p>');
             $('#two').append('<p>$ ' + annual + '</p>');
             $('#three').append('<p>' + multiple + 'x</p>');
