@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap -->
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="css/main.css" type="text/css" charset="utf-8"/>
+	<!-- тут пока что подключаю не минифицированый main.css так как у меня выдает ошибку компиляции при минификации, когда разберусь от чего тогда подключу минифицированиый -->
+	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" charset="utf-8"/>
+	<link rel="stylesheet" href="css/bootstrap-select.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<nav class="navbar bg-inverse navbar-dark">
+			<button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+				&#9776;
+			</button>
+
+			<div class="pseudo-block">
+				
+			</div>
+
+			<a class="navbar-brand mobile-logo" href="#">
+				<img class=" hidden" src="img/main_logo.png" alt="">
+			</a>
+			
+			<div class="collapse navbar-toggleable-md" id="exCollapsingNavbar2">
+				<!-- logo -->
+				<div class="logo  hidden">
+					
+					<a class="navbar-brand hidden" href="#">
+						<img class=" hidden" src="img/main_logo.png" alt="">
+					</a>
+				</div>
+				<!-- main menu left part-->
+				<ul class="nav navbar-nav pull-left">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">About us 
+							<i class="fa fa-angle-down"></i>
+
+						</a>
+						<div class="list-container">
+							<ul class="submenu list-unstyled">
+								<li>
+									<a class="btn" href="#">Overview</a>
+								</li>
+								<li>
+									<a class="btn" href="#">Team</a>
+								</li>
+								<li>
+									<a class="btn" href="#">Partners</a>
+								</li>
+								<li>
+									<a class="btn" href="#">Contact Us</a>
+								</li>
+								<li>
+									<a class="btn" href="#">Careers</a>
+								</li>
+								<li>
+									<a class="btn" href="#">In the News</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Resource center <i class="fa fa-angle-down"></i></a>
+						<div class="list-container two-columns">
+							<ul class="  submenu list-unstyled">
+								<li class="btn-sm">
+									<p>For Investors</p>
+									
+								</li>
+								<li>
+									<a class="btn" href="">Investor Tutorial</a>
+									
+								</li>
+								<li>
+									<a class="btn" href="">Educational Materials</a>
+									
+								</li>
+								<li>
+									
+									<a class="btn" href="">FAQ</a>
+								</li>
+							</ul>
+
+							<ul class="  submenu list-unstyled">
+								<li class="btn-sm">
+									<p>For Businesses</p>
+								</li>
+								<li>
+									<a class="btn" href="">Business Tutorials</a>
+								</li>
+								<li>
+									<a class="btn" href="">Campaign Material</a>
+								</li>
+								<li>
+									<a class="btn" href="">Success Guide</a>
+								</li>
+								<li>
+									<a class="btn" href="">Capital Raise Caculator</a>
+								</li>
+								<li>
+									<a class="btn" href="">What's My Business Worth?</a>
+								</li>
+								<li>
+									<a class="btn" href="">FAQ</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Advisor network 
+							<i class="fa fa-angle-down"></i>
+						</a>
+						<div class="list-container">
+							<ul class="  submenu list-unstyled">
+								<li>
+									<a class="btn" href="">About</a>
+								</li>
+
+								<li>
+									<a class="btn" href="">FAQ</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+
+				</ul>
+
+				<!-- main menu right part-->
+				<ul class="nav navbar-nav pull-right">
+
+					<li class="nav-item notification text-center">
+						<a href="#">
+							<i class="fa fa-bell-o ">
+								<span class="count-notific">5</span>
+							</i>
+						</a>
+
+						<div class="list-container ">
+
+							<ul class="submenu list-unstyled ">
+								<li class="clearfix title btn">
+									<span class="pull-left "><b>5 pending</b> comments</span>
+									<a class=" pull-right" href="#">view all</a>
+								</li>
+
+								<li class="clearfix btn">
+									<span class="pull-left ">Maria Kravchuk wrote...</span>
+									<i class=" pull-right">just now</i>
+								</li>
+								<li class="clearfix btn">
+									<span class="pull-left ">Maria Kravchuk wrote...</span>
+									<i class=" pull-right">just now</i>
+								</li>
+								<li class="clearfix btn">
+									<span class="pull-left ">Maria Kravchuk wrote...</span>
+									<i class=" pull-right">just now</i>
+								</li>
+								<li class="clearfix btn">
+									<span class="pull-left ">Maria Kravchuk wrote...</span>
+									<i class=" pull-right">just now</i>
+								</li>
+								<li class="clearfix btn">
+									<span class="pull-left ">Maria Kravchuk wrote...</span>
+									<i class=" pull-right">just now</i>
+								</li>
+							</ul>
+						</div>
+					</li>
+
+					<li class="nav-item notification text-center">
+						<a href="#">
+							<i class="fa fa-envelope-o">
+								<span class="count-notific">5</span>
+							</i>
+						</a>
+					</li>
+
+					<li class="nav-item user-info">
+						<a class="nav-link user-info-name" href="#">
+							<span >
+								<i class="fa fa-user"></i>
+							</span>
+							Maria Kravchuk
+						</a>
+
+						<div class="list-container user-info-drop">
+							<ul class="submenu list-unstyled ">
+								<li>
+									<a class="btn" href="">Account</a>
+								</li>
+
+								<li>
+									<a class="btn" href="">Issuer Dashboard</a>
+								</li>
+								<li>
+									<a class="btn" href="">Investor Dashboard</a>
+								</li>
+								<li>
+									<a class="btn" href="">Log Out</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<!-- main content of sighn up/login -->
+	<section class="established container">
+
+		
+
+		<div class="col-md-8 col-md-offset-2 col-sm-9 col-sm-offset-2">
+			<!-- Nav Tabs -->
+			<div class="row">
+				
+				<ul class="nav nav-tabs login-tabs">
+
+					<li class="nav-item active" aria-expanded="false">
+						<a href="#intro"  data-toggle="tab" class="nav-link " aria-expanded="true">INTRO</a>
+					</li>
+					<li class="nav-item">
+						<a href="#step_1" data-toggle="tab" class="nav-link " aria-expanded="true">STEP 1</a>
+					</li>
+					<li class="nav-item">
+						<a href="#step_2" data-toggle="tab" class="nav-link " aria-expanded="true">STEP 2</a>
+					</li>
+					<li class="nav-item">
+						<a href="#step_3" data-toggle="tab" class="nav-link " aria-expanded="true">STEP 3</a>
+					</li>
+					<li class="nav-item">
+						<a href="#finish" data-toggle="tab" class="nav-link " aria-expanded="true">FINISH</a>
+					</li>
+				</ul>
+
+				
+			</div>
+		</div>
+		<!-- Tabs -->
+		<div class="col-md-8 col-md-offset-2 col-sm-9 col-sm-offset-2">
+			<div class="row">
+				<div class="tab-content authorization-tabs-content ">
+					<div class="tab-pane active" id="intro" aria-expanded="true">
+						<!-- INTRO -->
+						<div class="row">
+								<legend class="ng-binding">PayBack Share Calculator - Intro</legend>
+									<h6>PayBack Share is a revenue share agreement that may be a good choice for:</h6>
+									<ul class="intro-list">
+										<li>A) Companies that generate or expect to generate cash (your operating earnings will have to be > 5% of your revenue for this to make sense); </li>
+										<li>B) LLC’s that are looking for ways to raise funds without the need to issue K-1s; and</li>
+										<li>C) Companies that want to maintain a clean capital structure in anticipation of a future venture capital fundraising round. </li>
+									</ul>
+							</div>
+							<div class="row">	
+									<h6>PayBack Share is a revenue share agreement that may be a good choice for:</h6>
+									<ul class="intro-list">
+										<li>A) Companies that generate or expect to generate cash (your operating earnings will have to be > 5% of your revenue for this to make sense); </li>
+										<li>B) LLC’s that are looking for ways to raise funds without the need to issue K-1s; and</li>
+										<li>C) Companies that want to maintain a clean capital structure in anticipation of a future venture capital fundraising round. </li>
+									</ul>
+							</div>
+							<div class="row">
+							<div class="text-center">
+								<a href="#step_1" data-toggle="tab"  aria-expanded="true"  class="bg-inverse submit-btn btn btn-primary btn-lg">Ok, let's get started<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+							</div>
+							</div>
+					</div>
+					<!-- End INTRO -->
+				</div>
+				<!-- STEP_1  -->
+				<div class="tab-pane fade" id="step_1" aria-expanded="false">
+					<legend class="">Established Business Valuation Calculator - Step 1</legend>
+
+					<form action="">
+						<div class="row">
+							<div class="col-md-6">
+								<label for="SELECTANOPTION">Please provide the industry to which your business belongs.</label>
+							</div>
+							<div class="col-md-6">
+								<!-- Split button -->
+								<fieldset class="form-group">
+									<select class="selectpicker form-control"  title="PLEASE SELECT AN OPTION">
+										<option>Mustard</option>
+										<option>Ketchup</option>
+										<option>Relish</option>
+										<option>Mustard</option>
+										<option>Ketchup</option>
+										<option>Relish</option>
+										<option>Mustard</option>
+										<option>Ketchup</option>
+										<option>Relish</option>
+										<option>Mustard</option>
+										<option>Ketchup</option>
+										<option>Relish</option>
+									</select>
+								</fieldset>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<label for="RaiseAmount">How much cash do you plan to raise?</label>
+							</div>
+							<div class="col-md-6">
+								<fieldset class="form-group">
+
+									<input type="text" class="form-control" id="#step_1" placeholder="Raise Amount">
+								</fieldset>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<label for="CashHoldings">How much cash, beyond what's needed for immediate operating needs, does your business currently have?</label>
+							</div>
+							<div class="col-md-6">
+								<fieldset class="form-group">
+
+									<input type="text" class="form-control" id="" placeholder="Cash Holdings">
+								</fieldset>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<label for="CurrentDebt">How much debt is your business currently carrying?</label>
+							</div>
+							<div class="col-md-6">
+								<fieldset class="form-group">
+									<input type="text" class="form-control" id="" placeholder="Current Debt">
+								</fieldset>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<a data-ui-sref="#intro" class="bg-inverse submit-btn btn btn-primary btn-block" href=""><i class="fa fa-arrow-circle-left" aria-hidden="true"></i>GO BACK
+
+								</a>
+							</div>
+							<div class="col-md-6 text-center">
+								<a class="bg-inverse submit-btn btn btn-primary btn-block" data-ui-sref="#step_2"  disabled="disabled">NEXT<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</form>
+				</div>
+				<!-- End  STEP_1 -->
+				<!-- STEP_2  -->
+				<div class="tab-pane fade" id="step_2" aria-expanded="false">
+					<legend class="">Established Business Valuation Calculator - Step 2</legend>
+					<p>For the last twelve months, please enter the following information about your business:</p>
+					<form action="">
+						<div class="row">
+							<div class="col-md-6">
+								<label for="Revenue">Revenue</label>
+							</div>
+							<div class="col-md-6">
+								<fieldset class="form-group">
+									<input type="text" class="form-control" id="#step_1" placeholder="Revenue">
+								</fieldset>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<label for="CostofGoodsSold">Cost of Goods Sold</label>
+							</div>
+							<div class="col-md-6">
+								<fieldset class="form-group">
+
+									<input type="text" class="form-control" id="" placeholder="Cost of Goods Sold">
+								</fieldset>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<label for="CurrentDebt" data-toggle="popover" data-placement="top" data-trigger="hover" title="Selling, General & Administrative Operating Expense" data-content="The sum of all direct and indirect selling expenses and all general and administrative expenses of a company">SG&A, and other Operating Expenses<i class="fa fa-question-circle" aria-hidden="true"></i></label>
+							</div>
+							<div class="col-md-6">
+								<fieldset class="form-group">
+									<input type="text" class="form-control" id="" placeholder="SG&A Operating Expenses">
+								</fieldset>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<label for="ExtraordinaryExpenses" data-toggle="popover" data-placement="top" data-trigger="hover" title="One Time (Extraordinary) Expenses" data-content="A rare, infrequent event which financial analysts separate out of the income statement in order to avoid distorting the 'regular' earnings reported by a company. They can include things like adverse legal, regulatory or tax issues, storm damage or restructuring charges.">One Time (Extraordinary) Expenses<i class="fa fa-question-circle" aria-hidden="true"></i></label>
+							</div>
+							<div class="col-md-6">
+								<fieldset class="form-group">
+									<input type="text" class="form-control" id="" placeholder="Extraordinary Expenses">
+								</fieldset>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<label for="D&A"><span data-toggle="popover" data-placement="top" data-trigger="hover" title="Depreciation" data-content="The allocation of the cost of assets to periods in which the assets are used.">Depreciation<i class="fa fa-question-circle" aria-hidden="true"></i></span>  & <span data-toggle="popover" data-placement="top" data-trigger="hover" title="Amoritization" data-content="To write off the cost of an asset gradually.">Amortization<i class="fa fa-question-circle" aria-hidden="true"></i></span></label>
+							</div>
+							<div class="col-md-6">
+								<fieldset class="form-group">
+									<input type="text" class="form-control" id="" placeholder="D & A">
+								</fieldset>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<label for="InterestPaid">Interest Paid</label>
+							</div>
+							<div class="col-md-6">
+								<fieldset class="form-group">
+									<input type="text" class="form-control" id="" placeholder="Interest Paid">
+								</fieldset>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<label for="TaxesPaid">Taxes Paid</label>
+							</div>
+							<div class="col-md-6">
+								<fieldset class="form-group">
+									<input type="text" class="form-control" id="" placeholder="Taxes Paid">
+								</fieldset>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<a data-ui-sref="#intro" class="bg-inverse submit-btn btn btn-primary btn-block" href=""><i class="fa fa-arrow-circle-left" aria-hidden="true"></i>GO BACK
+
+								</a>
+							</div>
+							<div class="col-md-6 text-center">
+								<a class="bg-inverse submit-btn btn btn-primary btn-block" data-ng-disabled="!establishedOne.$valid" ng-click="next(2, establishedOne)" disabled="disabled">NEXT<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</form>
+				</div>
+				<!-- End STEP_2  -->
+				<!-- STEP_3  -->
+				<div class="tab-pane fade" id="step_3" aria-expanded="false">
+					<legend class="">Established Business Valuation Calculator - Step 3</legend>
+					<p>For the next twelve months, please enter the following information about your business:</p>
+					<form action="">
+						<div class="row">
+							<div class="col-md-6">
+								<label for="Revenue">Revenue</label>
+							</div>
+							<div class="col-md-6">
+								<fieldset class="form-group">
+									<input type="text" class="form-control" id="#step_1" placeholder="Revenue">
+								</fieldset>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<label for="CostofGoodsSold">Cost of Goods Sold</label>
+							</div>
+							<div class="col-md-6">
+								<fieldset class="form-group">
+
+									<input type="text" class="form-control" id="" placeholder="Cost of Goods Sold">
+								</fieldset>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<label for="CurrentDebt" data-toggle="popover" data-placement="top" data-trigger="hover" title="Selling, General & Administrative Operating Expense" data-content="The sum of all direct and indirect selling expenses and all general and administrative expenses of a company">SG&A, and other Operating Expenses<i class="fa fa-question-circle" aria-hidden="true"></i></label>
+							</div>
+							<div class="col-md-6">
+								<fieldset class="form-group">
+									<input type="text" class="form-control" id="" placeholder="SG&A Operating Expenses">
+								</fieldset>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<label for="ExtraordinaryExpenses" data-toggle="popover" data-placement="top" data-trigger="hover" title="One Time (Extraordinary) Expenses" data-content="A rare, infrequent event which financial analysts separate out of the income statement in order to avoid distorting the 'regular' earnings reported by a company. They can include things like adverse legal, regulatory or tax issues, storm damage or restructuring charges.">One Time (Extraordinary) Expenses<i class="fa fa-question-circle" aria-hidden="true"></i></label>
+							</div>
+							<div class="col-md-6">
+								<fieldset class="form-group">
+									<input type="text" class="form-control" id="" placeholder="Extraordinary Expenses">
+								</fieldset>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<label for="D&A"><span data-toggle="popover" data-placement="top" data-trigger="hover" title="Depreciation" data-content="The allocation of the cost of assets to periods in which the assets are used.">Depreciation<i class="fa fa-question-circle" aria-hidden="true"></i></span>  & <span data-toggle="popover" data-placement="top" data-trigger="hover" title="Amoritization" data-content="To write off the cost of an asset gradually.">Amortization<i class="fa fa-question-circle" aria-hidden="true"></i></span></label>
+							</div>
+							<div class="col-md-6">
+								<fieldset class="form-group">
+									<input type="text" class="form-control" id="" placeholder="D & A">
+								</fieldset>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<label for="InterestPaid">Interest Paid</label>
+							</div>
+							<div class="col-md-6">
+								<fieldset class="form-group">
+									<input type="text" class="form-control" id="" placeholder="Interest Paid">
+								</fieldset>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<label for="TaxesPaid">Taxes Paid</label>
+							</div>
+							<div class="col-md-6">
+								<fieldset class="form-group">
+									<input type="text" class="form-control" id="" placeholder="Taxes Paid">
+								</fieldset>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<a data-ui-sref="#intro" class="bg-inverse submit-btn btn btn-primary btn-block" href=""><i class="fa fa-arrow-circle-left" aria-hidden="true"></i>GO BACK
+
+								</a>
+							</div>
+							<div class="col-md-6 text-center">
+								<a class="bg-inverse submit-btn btn btn-primary btn-block" data-ng-disabled="!establishedOne.$valid" ng-click="next(2, establishedOne)" disabled="disabled">NEXT<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</form>
+				</div>
+				<!-- End STEP_3  -->
+				<!-- FINISH -->
+				<div class="tab-pane" id="finish" aria-expanded="false">
+
+
+					<div class="row">
+						<fieldset class="ng-scope">
+							<legend class="ng-binding">Established Business Valuation Calculator - Totals</legend>
+							<div class="row">
+								<div class="col-xs-10 col-xs-offset-1">
+									<p>
+										Given the information you’ve entered, we aren’t able to calculate an estimated value for your business.
+									</p>
+								</div>
+							</div>
+							<div class="text-center">
+								<a data-ui-sref="" class="bg-inverse submit-btn btn btn-primary" href=""><i class="fa fa-arrow-circle-left" aria-hidden="true"></i>GO BACK
+
+								</a>
+							</div>
+						</fieldset>
+					</div>
+					<!-- End FINISH -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Nav Tabs -->
+
+
+</section>
+
+<footer class="footer_new">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3">
+				<div class="footer_title border_bottom">
+					<h4>About us</h4>
+				</div>
+				<a href="">Overview</a>
+				<a href="">Team</a>
+				<a href="">Partners</a>
+				<a href="">Contacy Us</a>
+				<a href="">Careers</a>
+				<a href="">In the News</a>
+				<a href="">FAQ</a>
+				<a href="">Blog</a>
+			</div>
+			<div class="col-lg-3">
+				<div class="footer_title border_bottom">
+					<h4>Investor resources</h4>
+				</div>
+				<a href="">Investor Tutorial</a>
+				<a href="">Education Material</a>
+				<div class="footer_title border_bottom">
+					<h4>Business recources</h4>
+				</div>
+				<a href="">Business Tutorial</a>
+				<a href="">Success Guide</a>
+				<a href="">Capital Raise Calculator</a>
+				<a href="">What's me Business Worth?</a>
+			</div>
+			<div class="col-lg-3">
+				<div class="footer_title border_bottom">
+					<h4>Advisor network</h4>
+				</div>
+				<a href="">About</a>
+				<a href="">FAQ</a>
+			</div>
+			<div class="col-lg-3">
+				<div class="footer_title border_bottom">
+					<h4>Legal</h4>
+				</div>
+				<a href="">Terms</a>
+				<a href="">Privacy</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="company">
+					<span>©GROWTHFOUNTAIN 2016.</span>
+					<p>Made with love for great people</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- Здесь пишем код -->
+
+
+<div class="hidden"></div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+
+	<!-- Load Scripts Start -->
+	<!-- <script src="http://code.jquery.com/jquery-1.9.1.js"></script> -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popover/tether.min.js"></script>
+	<script src="js/popover/util.js"></script>
+	<script src="js/popover/tooltip.js"></script>
+	<script src="js/popover/popover.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-select.js"></script>
+	<script src="js/my_script.js"></script>
+	<!-- Load Scripts End -->
+
+</body>
+</html>

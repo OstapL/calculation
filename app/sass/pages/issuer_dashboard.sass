@@ -1,0 +1,261 @@
+.second
+	margin-top: 84px
+
+	.img_under_text
+		position: relative
+		margin-bottom: 15px
+
+		img
+			width: 100%
+
+		h3
+			z-index: 2
+			width: 100%
+			text-align: center
+			color: $white
+			position: absolute
+			left: 50%
+			top: 50%
+			-ms-transform: translate(-50%,-50%)
+			-webkit-transform: translate(-50%,-50%)
+			transform: translate(-50%,-50%)
+
+		.timer_day
+			position: absolute
+			z-index: 1
+			background: $red
+			padding: 0 10px
+			color: $white
+			border-radius: 3px
+			position: absolute
+			right: 11px
+			top: 11px
+			font-weight: bold
+			font-size: 14px
+			line-height: 27px
+
+.dashboard-stat.grey .details .desc,
+.dashboard-stat.grey .details .number
+	padding-top: 0
+	color: $grey
+
+.dashboard-stat 
+	.visual
+		height: 80px
+		float: left
+		padding-top: 10px
+		padding-left: 15px
+		margin-bottom: 5px
+
+		i
+			font-size: 48px
+			margin-left: -10px
+			margin-top: 26px
+
+.dashboard-stat.grey
+	.details
+		.number
+			font-size: 18px
+			color: $grey
+		.desc
+			font-size: 12px
+			color: $grey
+
+.tpl-progress
+	position: relative
+	padding-top: 38px
+
+	.big_prog
+		display: block
+		width: 100%
+		height: 2px
+		margin-bottom: 11px
+		color: $black_text
+
+	.big_prog[value]::-webkit-progress-value
+		background-color: $black
+
+	.circle_progress
+		height: 11px
+		z-index: 55
+		color: $black_text
+		display: inline-block
+		font: normal normal normal 14px/1 FontAwesome
+		font-size: inherit
+		text-rendering: auto
+		-webkit-font-smoothing: antialiased
+		-moz-osx-font-smoothing: grayscale
+		position: absolute
+		margin-top: -19px
+		text-align: right
+		margin-right: 12px
+
+		i
+			font-weight: bold
+			background: #fff
+
+	.text_position
+		margin-left: -39px
+		top: 0
+		position: absolute
+		text-align: center
+		line-height: 23px
+		letter-spacing: 0
+		font-size: 12px
+		line-height: 1em
+
+.progress_description
+	margin-bottom: 8px
+	
+	p
+		margin: 0
+		line-height: 1em
+		color: $grey
+
+	span
+		font-size: 10px
+		color: $grey
+		line-height: 1em
+		display: block
+
+.right_fixed_text
+	position: absolute
+	right: 11px
+	top: 17px
+	bottom: 0
+	margin: auto
+	color: $grey
+
+	span
+		line-height: 23px
+		font-size: 18px
+
+		i
+			font-size: 14px
+			font-style: normal
+			display: block
+			line-height: 1em
+
+.view_campaing
+	border: none
+	padding: 0 25px
+	line-height: 26px
+
+.grafic
+	border-top: 1px solid $border_color
+	margin-top: 70px
+	padding-top: 85px
+
+.third
+	margin-top: 75px
+
+.title-size
+	font-size: 25px
+	letter-spacing: 7.5px
+	margin-bottom: 15px
+	display: block
+	margin-bottom: 35px
+
+
+.portlet.light>.portlet-title>.actions .dropdown-menu li>a
+	color: #555
+
+.portlet>.portlet-title>.actions>.btn,
+.portlet>.portlet-title>.actions>.btn-group>.btn,
+.portlet>.portlet-title>.actions>.btn-group>.btn.btn-sm,
+.portlet>.portlet-title>.actions>.btn.btn-sm
+	padding: 4px 10px
+	font-size: 13px
+	line-height: 1.5
+	border: 2px solid #53575b
+	margin-left: 4px
+
+.portlet>.portlet-title
+	text-align: left
+
+.portlet>.portlet-title>.nav-tabs>li
+	display: inline-block
+
+.portlet>.portlet-title>.nav-tabs>li.active
+	border: 1px solid $border_color
+	border-bottom: none
+	color: $grey
+
+.portlet>.portlet-title>.nav-tabs>li a
+	line-height: 42px
+	padding: 0 10px
+	color: $grey
+
+.all_comments
+	height: 334px
+	overflow-y: scroll
+
+.leave_comments
+	min-height: 408px
+	border: 1px solid $border_color
+
+	.write_com
+		margin: 0 auto
+		padding: 11px 0
+		border-bottom: 1px solid $border_color
+
+	.form
+		text-align: right
+
+		textarea
+			width: 90%
+			border-radius: 3px
+			height: 136px
+			display: inline-block
+			resize: none
+			margin-top: 22px
+			margin-right: 2.5%
+
+		.add_comment_btn
+			margin-right: 2.5%
+			margin-top: 19px
+			padding-left: 24px
+			padding-right: 24px
+			background: $grey
+			border-radius: 3px
+			color: #ffffff
+			+mt(.2s)
+
+			&:hover
+				background: $black
+				+mt(.2s)
+
+.mt-comments .mt-comment .mt-comment-body .mt-comment-details .mt-comment-actions
+	display: block
+	float: left
+
+
+.social_footer
+	width: 100%
+	border-top: 1px solid $border_color
+	margin-top: 85px
+	padding-top: 75px
+	padding-bottom: 75px
+
+	.descc_title
+		margin-bottom: 18px
+		text-align: left
+		font-size: 24px
+		font-weight: bold
+		letter-spacing: 8px
+
+
+
+	.text_and_button
+		p
+			color: $grey
+
+		.btn_link
+			width: 100%
+			border: 2px solid $grey
+			color: $grey
+			border-radius: 0
+
+		.btn_link:hover
+			color: #ef3239
+			border: 2px solid #ef3239

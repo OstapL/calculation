@@ -1,0 +1,32 @@
+
+.bootstrap-select
+	.dropdown-toggle
+		.filter-option
+			font-size: $font-size-xs
+			text-transform: uppercase
+			letter-spacing: 2px;
+			line-height: 2.1
+
+		&:focus
+			outline: none!important
+		
+	.dropdown-menu
+		&.open
+			margin-top: 0
+
+		li a
+			&:focus
+				outline: none
+
+
+// styled select in .create-alert-block
+.create-alert-block
+	.bootstrap-select
+		width: 140px!important
+		display: inline-block!important
+
+		.dropdown-toggle
+			padding-top: 4px;
+			padding-bottom: 3px
+
+			background: none

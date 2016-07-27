@@ -1,0 +1,109 @@
+.authorization{
+	margin-top: 45px;
+}
+
+.login-tabs {
+	margin-bottom: 20px;
+
+	border-bottom: none;
+
+	li {
+		margin-right: 30px;
+
+		&.active {
+			border: 1px $active_tab_authorization solid;
+		}
+
+		a.nav-link {
+			padding: 5px 30px;
+
+			text-transform: uppercase;
+			color: $tab_authorization_text;
+			letter-spacing: 2px;
+
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+	}
+}
+
+.authorization-tabs-content {
+	font-weight: 300;
+	label {
+		margin-bottom: 0px;
+		margin-top: 4px;
+
+		color: $grey;
+	}
+
+	.signature,
+	.terms_conditions {
+		margin-top: 20px;
+		margin-bottom: 10px;
+
+		label {
+			margin-top: 0;
+
+			font-size: 16px;
+
+		}
+
+		input[type='checkbox'] {
+			vertical-align: bottom;
+		}
+	}
+
+	.terms_conditions {
+		margin-bottom: 30px;
+	}
+
+	.socialaccount_ballot {
+
+		margin-top: 30px;
+		margin-bottom: 20px;
+
+		p {
+			color: $black;
+		}
+
+		li {
+			float: left;
+		}
+
+		a {
+			padding: 5px 15px;
+
+			cursor: pointer;
+
+			font-size: 18px;
+			color: $grey;
+
+			&.facebook {
+
+			}
+
+			&.googleplus {
+
+			}
+
+			&.linkedin {
+
+			}
+		}
+	}
+
+	.forget-password {
+		font-size: 20px;
+	}
+
+	.submit-btn {
+		padding: 10px 30px;
+		border-radius: 2px;
+		background: rgba($authorization_btn_submit_bg, .8);
+
+		font-size: 14px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+}

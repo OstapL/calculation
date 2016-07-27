@@ -1,0 +1,49 @@
+@import 'autorization.scss'
+
+.text_block
+	padding-top: 77px
+
+
+	img 
+		max-width: 100%
+
+	
+
+	.sidebar_title
+		text-transform: uppercase
+		color: $grey
+		border-bottom: 1px solid $grey
+		margin-bottom: 15px
+		letter-spacing: 6px
+
+	ul.sidebar_link
+		padding: 0
+
+		li
+			display: block
+			line-height: 2em
+
+			a
+				color: $black_text
+				+mt(.2s)
+
+			:hover,
+			.active
+				color: $grey
+				+mt(.2s)
+	
+	.main_text
+		color: $black_text
+		margin-bottom: 15px
+
+	.first
+		margin-bottom: 37px
+
+	figure
+		p
+			margin-bottom: 5px
+
+@import "investor_tutorial.sass"
+@import "pia.sass"
+@import "issuer_dashboard.sass"
+@import "established.sass"

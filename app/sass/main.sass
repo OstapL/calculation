@@ -1,0 +1,511 @@
+// @import "bourbon"
+@import "vars"
+@import "colors"
+
+// configuration Bootstrap 
+@import "customize_bootstrap/_shared.sass";
+
+// configuration Bourbon
+@import "customize_bourbon/_shared.sass";
+
+// rewrite select-bootstrap styles
+@import "common-styles/_common-styles.sass";
+
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+
+// стили для текстовых статических страниц
+@import "pages/pages.sass"
+
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+a
+	text-decoration: none
+	&:hover
+		text-decoration: none
+
+.dropdown-menu
+    position: absolute
+    top: 100%
+    left: 0
+    z-index: 1000
+    display: none
+    float: left
+    min-width: 160px
+    padding: 5px 0
+    margin: 2px 0 0
+    font-size: 14px
+    text-align: left
+    list-style: none
+    background-color: #fff
+    -webkit-background-clip: padding-box
+    background-clip: padding-box
+    border: 1px solid #ccc
+    border: 1px solid rgba(0, 0, 0, .15)
+    border-radius: 4px
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175)
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175)
+
+.dropdown-menu.pull-right
+    right: 0
+    left: auto
+
+.dropdown-menu .divider
+    height: 1px
+    margin: 9px 0
+    overflow: hidden
+    background-color: #e5e5e5
+
+.dropdown-menu>li>a
+    display: block
+    padding: 3px 20px
+    clear: both
+    font-weight: 400
+    line-height: 1.42857143
+    color: #333
+    white-space: nowrap
+
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover
+    color: #262626
+    text-decoration: none
+    background-color: #f5f5f5
+
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:focus,
+.dropdown-menu>.active>a:hover
+    color: #fff
+    text-decoration: none
+    background-color: #337ab7
+    outline: 0
+
+.dropdown-menu>.disabled>a,
+.dropdown-menu>.disabled>a:focus,
+.dropdown-menu>.disabled>a:hover 
+    color: #777
+
+.btn-group .dropdown-toggle:active,
+.btn-group.open .dropdown-toggle
+    outline: 0
+
+.btn-group>.btn+.dropdown-toggle
+    padding-right: 8px
+    padding-left: 8px
+
+.btn-group>.btn-lg+.dropdown-toggle
+    padding-right: 12px
+    padding-left: 12px
+
+.btn-group.open .dropdown-toggle 
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)
+
+.btn-group.open .dropdown-toggle.btn-link
+    -webkit-box-shadow: none
+    box-shadow: none
+
+.btn-default
+    color: #333
+    background-color: #fff
+    border-color: #ccc
+
+.btn-default.focus,
+.btn-default:focus
+    color: #333
+    background-color: #e6e6e6
+    border-color: #8c8c8c
+
+.btn-default:hover
+    color: #333
+    background-color: #e6e6e6
+    border-color: #adadad
+
+.btn-default.active,
+.btn-default:active,
+.open>.dropdown-toggle.btn-default
+    color: #333
+    background-color: #e6e6e6
+    border-color: #adadad
+
+.btn-default.active.focus,
+.btn-default.active:focus,
+.btn-default.active:hover,
+.btn-default:active.focus,
+.btn-default:active:focus,
+.btn-default:active:hover,
+.open>.dropdown-toggle.btn-default.focus,
+.open>.dropdown-toggle.btn-default:focus,
+.open>.dropdown-toggle.btn-default:hover
+    color: #333
+    background-color: #d4d4d4
+    border-color: #8c8c8c
+
+.btn-default.active,
+.btn-default:active,
+.open>.dropdown-toggle.btn-default
+    background-image: none
+
+.btn-default.disabled.focus,
+.btn-default.disabled:focus,
+.btn-default.disabled:hover,
+.btn-default[disabled].focus,
+.btn-default[disabled]:focus,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default.focus,
+fieldset[disabled] .btn-default:focus,
+fieldset[disabled] .btn-default:hover
+    background-color: #fff
+    border-color: #ccc
+
+.btn-default .badge
+    color: #fff
+    background-color: #333
+
+
+.glyphicon
+	position: relative
+	top: 1px
+	display: inline-block
+	font-family: 'Glyphicons Halflings'
+	font-style: normal
+	font-weight: 400
+	line-height: 1
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+.glyphicon-ok:before
+	content: "\e013"
+
+.clear
+	clear: both
+
+.header_title
+	width: 100%
+	background: $footer_background
+	padding: 63px 0 60px 0
+
+	h2
+		color: $black_text
+		font-size: 30px
+		letter-spacing: 6px
+		text-transform: uppercase
+		line-height: 23px
+		font-weight: bold
+
+	a,
+	span
+		color: $black_text
+		font-size: 12px
+		letter-spacing: 2.4px
+		text-transform: uppercase
+		line-height: 35px
+
+	.curent
+		color: $grey
+
+.filter
+	padding-top: 85px
+	padding-bottom: 50px
+	
+	.one_drop
+		height: 38px
+
+		.btn
+			padding: 6px 35px 5px 20px
+
+	// block with create alert btn
+	.create-alert-block
+		padding-top: 25px;
+
+		.create_alert a
+			border: 2px solid $alert_background
+			padding: 5px 26px 4px 26px
+			text-transform: uppercase
+			border-radius: 0
+			font-size: $font-size-xs
+			letter-spacing: 2px
+			color: $alert_background
+			text-align: center
+
+			+mt(.2s)
+			&:hover
+				background: $alert_background
+				color: $white
+				text-decoration: none
+				+mt(.3s)
+
+		.bootstrap-select
+			width: 100% !important
+
+			.dropdown-toggle
+				background: none
+				padding-top: 2px
+				padding-bottom: 2px
+
+.block_link
+	position: absolute
+	left: 15px
+	right: 15px
+	bottom: 49px
+	top: 0
+	z-index: 2
+	
+	&:hover~.one_block
+		.for_img
+			.more_inform
+				opacity: 1
+				z-index: 5
+				+mt(0.2s)
+
+.one_block
+	width: 100%
+	border: 1px solid $border-color
+	border-top: none
+	margin-bottom: 49px
+	display: block
+	text-decoration: none !important
+
+	.for_img
+		margin: 0 -1px
+		height: 209px
+		overflow: hidden
+		position: relative
+
+		img
+			width: 100%
+
+		.timer_day
+			position: absolute
+			z-index: 1
+			background: $red
+			padding: 0 10px
+			color: $white
+			border-radius: 3px
+			position: absolute
+			right: 11px
+			top: 11px
+			font-weight: bold
+			font-size: 14px
+			line-height: 27px
+
+		.more_inform
+			opacity: 0
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background: rgba(255,255,255, 0.96)
+			text-align: center
+			z-index: 1
+			+mt(0.2s)
+
+			.title
+				margin: 0 10px
+				padding-top: 20px
+
+				h3
+					font-family: $dosis
+					font-size: 18px
+					color: $black_text
+					letter-spacing: 5.4px
+					text-transform: uppercase
+					max-width: 100%
+					line-height: 18px
+
+			.small_text
+				margin: 0 10px
+				padding-top: 55px
+
+				p
+					font-size: 14px
+					line-height: 18px
+					color: $grey
+					margin-bottom: 0
+
+			.ico_cont
+				width: 100%
+				padding-top: 1px
+				position: relative
+				z-index: 6
+
+				a
+
+					i
+						color: $grey
+						font-size: 14px
+						display: inline-block
+						vertical-align: middle
+						margin: 0 7px
+						&:hover
+							color: $black_text
+
+					i.fa-gift
+						font-size: 20px
+
+			.bottom_pr
+				width: 100%
+				padding-top: 15px
+
+				p
+					font-size: 12px
+					color: #747474
+					line-height: 18px
+					margin: 0
+	&:hover
+		.more_inform
+			opacity: 1
+			+mt(0.2s)
+	
+	.title
+		margin: 0 10px
+		padding-top: 15px
+
+		h3
+			font-family: $dosis
+			font-size: 18px
+			color: $black_text
+			letter-spacing: 5.4px
+			text-transform: uppercase
+			float: left
+			line-height: 21px
+
+		span.place
+			float: right
+			color: $grey
+			font-size: 11px
+			line-height: 21px
+			text-align: right
+
+			i
+				margin-right: 5px
+	
+	.description
+		margin: 0 10px
+		max-height: 54px
+		overflow: hidden
+		
+		p
+			font-size: 11px
+			line-height: 18px
+			letter-spacing: 0px
+			color: $black_text
+
+	.progress_bar_container
+		margin: 0 10px
+		padding-top: 7px
+
+		.left_text
+			float: left
+			color: $black_text
+			font-size: 14px
+			line-height: 29px
+
+		.right_text
+			float: right
+			text-align: right
+			color: $grey
+			font-size: 14px
+
+			b
+				color: $total_sum_progresbar
+				font-size: 18px
+		
+		.progress
+			margin: 0
+
+		.progress[value]::-webkit-progress-value
+			background-color: $progress_bar_background
+			border-top-left-radius: none
+			border-bottom-left-radius: none
+	
+	.bottom_text
+		margin: 0 10px
+
+		.left_desc
+			float: left
+			color: $grey
+			font-size: 11px
+			line-height: 45px
+			letter-spacing: 0.275px
+
+			b
+				font-weight: normal
+				color: $black_text
+				text-transform: uppercase
+				letter-spacing: 2px
+
+		.right_desc
+			float: right
+			text-align: right
+			color: $grey
+			font-size: 11px
+			line-height: 45px
+			letter-spacing: 0.275px
+
+			b
+				font-weight: normal
+				color: $black_text
+				text-transform: uppercase
+				letter-spacing: 2px
+
+.pagination
+	width: 100%
+	margin: 0
+
+	.page-item
+		+mt(0.2s)
+
+		a
+			margin-right: 4px
+
+		&:hover a
+			border: 1px solid #a3a3a3
+			color: $grey
+			background: none
+			+mt(0.2s)
+
+	.page-item a:visited,
+	.page-item a:focus
+		text-decoration: none
+		background: none
+	
+	.page-item.active a,
+	.page-item.active a:focus,
+	.page-item.active a:visited
+		background: none
+
+		&:hover
+			background: none
+
+
+//ALWAYS END
+@import "media"
+@import "fonts"
+
+body
+	font-family: 'Open Sans', sans-serif;

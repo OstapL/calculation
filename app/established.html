@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap -->
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="css/main.css" type="text/css" charset="utf-8"/>
+	<!-- тут пока что подключаю не минифицированый main.css так как у меня выдает ошибку компиляции при минификации, когда разберусь от чего тогда подключу минифицированиый -->
+	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" charset="utf-8"/>
+	<link rel="stylesheet" href="css/bootstrap-select.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<nav class="navbar bg-inverse navbar-dark">
+			<button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+				&#9776;
+			</button>
+
+			<div class="pseudo-block">
+				
+			</div>
+
+			<a class="navbar-brand mobile-logo" href="#">
+				<img class=" hidden" src="img/main_logo.png" alt="">
+			</a>
+			
+			<div class="collapse navbar-toggleable-md" id="exCollapsingNavbar2">
+				<!-- logo -->
+				<div class="logo  hidden">
+					
+					<a class="navbar-brand hidden" href="#">
+						<img class=" hidden" src="img/main_logo.png" alt="">
+					</a>
+				</div>
+				<!-- main menu left part-->
+				<ul class="nav navbar-nav pull-left">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">About us 
+							<i class="fa fa-angle-down"></i>
+
+						</a>
+						<div class="list-container">
+							<ul class="submenu list-unstyled">
+								<li>
+									<a class="btn" href="#">Overview</a>
+								</li>
+								<li>
+									<a class="btn" href="#">Team</a>
+								</li>
+								<li>
+									<a class="btn" href="#">Partners</a>
+								</li>
+								<li>
+									<a class="btn" href="#">Contact Us</a>
+								</li>
+								<li>
+									<a class="btn" href="#">Careers</a>
+								</li>
+								<li>
+									<a class="btn" href="#">In the News</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Resource center <i class="fa fa-angle-down"></i></a>
+						<div class="list-container two-columns">
+							<ul class="  submenu list-unstyled">
+								<li class="btn-sm">
+									<p>For Investors</p>
+									
+								</li>
+								<li>
+									<a class="btn" href="">Investor Tutorial</a>
+									
+								</li>
+								<li>
+									<a class="btn" href="">Educational Materials</a>
+									
+								</li>
+								<li>
+									
+									<a class="btn" href="">FAQ</a>
+								</li>
+							</ul>
+
+							<ul class="  submenu list-unstyled">
+								<li class="btn-sm">
+									<p>For Businesses</p>
+								</li>
+								<li>
+									<a class="btn" href="">Business Tutorials</a>
+								</li>
+								<li>
+									<a class="btn" href="">Campaign Material</a>
+								</li>
+								<li>
+									<a class="btn" href="">Success Guide</a>
+								</li>
+								<li>
+									<a class="btn" href="">Capital Raise Caculator</a>
+								</li>
+								<li>
+									<a class="btn" href="">What's My Business Worth?</a>
+								</li>
+								<li>
+									<a class="btn" href="">FAQ</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Advisor network 
+							<i class="fa fa-angle-down"></i>
+						</a>
+						<div class="list-container">
+							<ul class="  submenu list-unstyled">
+								<li>
+									<a class="btn" href="">About</a>
+								</li>
+
+								<li>
+									<a class="btn" href="">FAQ</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+
+				</ul>
+
+				<!-- main menu right part-->
+				<ul class="nav navbar-nav pull-right">
+
+					<li class="nav-item notification text-center">
+						<a href="#">
+							<i class="fa fa-bell-o ">
+								<span class="count-notific">5</span>
+							</i>
+						</a>
+
+						<div class="list-container ">
+
+							<ul class="submenu list-unstyled ">
+								<li class="clearfix title btn">
+									<span class="pull-left "><b>5 pending</b> comments</span>
+									<a class=" pull-right" href="#">view all</a>
+								</li>
+
+								<li class="clearfix btn">
+									<span class="pull-left ">Maria Kravchuk wrote...</span>
+									<i class=" pull-right">just now</i>
+								</li>
+								<li class="clearfix btn">
+									<span class="pull-left ">Maria Kravchuk wrote...</span>
+									<i class=" pull-right">just now</i>
+								</li>
+								<li class="clearfix btn">
+									<span class="pull-left ">Maria Kravchuk wrote...</span>
+									<i class=" pull-right">just now</i>
+								</li>
+								<li class="clearfix btn">
+									<span class="pull-left ">Maria Kravchuk wrote...</span>
+									<i class=" pull-right">just now</i>
+								</li>
+								<li class="clearfix btn">
+									<span class="pull-left ">Maria Kravchuk wrote...</span>
+									<i class=" pull-right">just now</i>
+								</li>
+							</ul>
+						</div>
+					</li>
+
+					<li class="nav-item notification text-center">
+						<a href="#">
+							<i class="fa fa-envelope-o">
+								<span class="count-notific">5</span>
+							</i>
+						</a>
+					</li>
+
+					<li class="nav-item user-info">
+						<a class="nav-link user-info-name" href="#">
+							<span >
+								<i class="fa fa-user"></i>
+							</span>
+							Maria Kravchuk
+						</a>
+
+						<div class="list-container user-info-drop">
+							<ul class="submenu list-unstyled ">
+								<li>
+									<a class="btn" href="">Account</a>
+								</li>
+
+								<li>
+									<a class="btn" href="">Issuer Dashboard</a>
+								</li>
+								<li>
+									<a class="btn" href="">Investor Dashboard</a>
+								</li>
+								<li>
+									<a class="btn" href="">Log Out</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<!-- main content of sighn up/login -->
+	<section class="established container">
+
+		
+
+		<div class="col-md-8 col-md-offset-2 col-sm-9 col-sm-offset-2">
+			<div class="col-md-6">
+				<div class="row">
+					<legend class="ng-binding">PayBack Calculator</legend>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+
+					<ul class="btn-group" role="group">
+
+						<li class="btn btn-secondary active" aria-expanded="false">
+							<a href="#intro"  data-toggle="tab" class="nav-link " aria-expanded="true">INTRO</a>
+						</li>
+						<li class="btn btn-secondary">
+							<a href="#step_1" data-toggle="tab" class="nav-link " aria-expanded="true">STEP 1</a>
+						</li>
+						<li class="btn btn-secondary">
+							<a href="" data-toggle="tab" class="nav-link " aria-expanded="true">FINISH</a>
+						</li>
+					</ul>
+
+
+				</div>
+			</div>
+			<!-- Nav Tabs -->
+
+		</div>
+		<!-- Tabs -->
+		<div class="col-md-12 ">
+			<div class="row">
+				<div class="tab-content authorization-tabs-content ">
+					<div class="tab-pane active" id="intro" aria-expanded="true">
+						<!-- INTRO -->
+						<div class="row">
+							<legend class="ng-binding">PayBack Share Calculator - Intro</legend>
+							<h6>PayBack Share is a revenue share agreement that may be a good choice for:</h6>
+							<ol class="intro-list-row-one">
+								<li>Companies that generate or expect to generate cash (your operating earnings will have to be > 5% of your revenue for this to make sense); </li>
+								<li>LLC’s that are looking for ways to raise funds without the need to issue K-1s; and</li>
+								<li>Companies that want to maintain a clean capital structure in anticipation of a future venture capital fundraising round. </li>
+							</ol>
+						</div>
+						<div class="row">	
+							<h6>Here's how it works:</h6>
+							<ol class="intro-list-row-two">
+								<li>You share at least 5% of your revenue annually;</li>
+								<li>No distribution is required until the second full calendar year and you are allowed one year of forbearance as needed;</li>
+								<li> Distributions are capped at 2x the invested amount, at which point your obligation is fulfilled</li>
+							</ol>
+						</div>
+						<div class="row">	
+							<h6>Here are some of the advantages of choosing PayBack Share:</h6>
+							<ol class="intro-list-row-two">
+								<li>It does not dilute the ownership of current shareholders or the control of management </li>
+								<li>It avoids a prolonged negotiation over valuation and “messy cap table”</li>
+								<li>It may be easier to raise capital and attract investors by offering the potential to earn regular cash distributions</li>
+								<li>It gives you the chance to keep more of the upside since once investors’ have received 2x their money back, you will have no further obligation</li>
+							</ol>
+						</div>
+						<div class="row">
+							<h6>Click here to see the PayBack Equity Subscription Agreement</h6>
+						</div>
+						<div class="row">
+							<div class="text-center">
+								<a href="#step_1" data-toggle="tab"  aria-expanded="true"  class="bg-inverse submit-btn btn btn-primary btn-lg">Ok, let's get started<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+					<!-- End INTRO -->
+
+					<!-- STEP_1  -->
+					<div class="tab-pane fade" id="step_1" aria-expanded="false">
+						<legend class="">This calculator will give you an idea of distributions associated with issuing PayBack Equity</legend>
+						<form action="">
+							<div class="row">
+								<div class="col-md-6">
+									<label for="RaiseAmount">How much money do you plan to raise?</label>
+								</div>
+								<div class="col-md-6">
+									<fieldset class="form-group">
+										<input  type="text" class="form-control" id="invest" placeholder="Raise Amount">
+									</fieldset>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<label for="CashHoldings">What do you expect your revenue to be next year?</label>
+								</div>
+								<div class="col-md-6">
+									<fieldset class="form-group">
+										<input type="text" class="form-control"  id="res" placeholder="Cash Holdings">
+									</fieldset>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<label for="CurrentDebt">At what rate do you expect your revenue to grow each year?</label>
+								</div>
+								<div class="col-md-6">
+									<fieldset class="form-group">
+										<input type="text" class="form-control"  id="percent" placeholder="Current Debt">
+									</fieldset>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<a data-ui-sref="#intro" class="bg-inverse submit-btn btn btn-primary btn-block" href=""><i class="fa fa-arrow-circle-left" aria-hidden="true"></i>GO BACK</a>
+								</div>
+								<div class="col-md-6 text-center">
+									<button class="bg-inverse submit-btn btn btn-primary btn-block" id="calculate" href="#finish"  data-toggle="tab"  >NEXT<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<!-- End  STEP_1 -->
+					<!-- FINISH -->
+					<div class="tab-pane" id="finish" aria-expanded="false">
+						<div class="row">
+
+							<fieldset class="ng-scope">
+								<legend class="ng-binding">Established Business Valuation Calculator - Totals</legend>
+								<table class="table ">
+									<thead class="">
+										<tr>
+											<th>Time</th>
+											<th>Fundraise</th>
+											<th>Revenue</th>
+											<th width="100">Annual Distributions</th>
+											<th width="100">Multiple Returned</th>
+											<th>Total Distributions</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">Year 0</th>
+											<td id="fundraise"></td>
+											<td></td>
+											<td width="100"></td>
+											<td width="100"></td>
+											<td></td>
+										</tr>
+										<tr>
+											<th scope="row">Year 1</th>
+											<td></td>
+											<td id="dohod"></td>
+											<td width="100"></td>
+											<td width="100"></td>
+											<td></td>
+										</tr>
+										<tr>
+											<th scope="row" id="year"></th>
+											<td></td>
+											<td id="one"></td>
+											<td width="100" id="two"></td>
+											<td width="100" id="three"></td>
+											<td id="four"></td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="col-md-12">
+									<div class="text-center">
+
+										<a class="bg-inverse submit-btn btn btn-primary" href=""><i class="fa fa-arrow-circle-left" aria-hidden="true"></i>GO BACK
+										</a>
+									</div>
+								</fieldset>
+								
+							</div>
+							<!-- End FINISH -->
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- End Nav Tabs -->
+
+
+		</section>
+
+
+		
+
+		<footer class="footer_new">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="footer_title border_bottom">
+							<h4>About us</h4>
+						</div>
+						<a href="">Overview</a>
+						<a href="">Team</a>
+						<a href="">Partners</a>
+						<a href="">Contacy Us</a>
+						<a href="">Careers</a>
+						<a href="">In the News</a>
+						<a href="">FAQ</a>
+						<a href="">Blog</a>
+					</div>
+					<div class="col-lg-3">
+						<div class="footer_title border_bottom">
+							<h4>Investor resources</h4>
+						</div>
+						<a href="">Investor Tutorial</a>
+						<a href="">Education Material</a>
+						<div class="footer_title border_bottom">
+							<h4>Business recources</h4>
+						</div>
+						<a href="">Business Tutorial</a>
+						<a href="">Success Guide</a>
+						<a href="">Capital Raise Calculator</a>
+						<a href="">What's me Business Worth?</a>
+					</div>
+					<div class="col-lg-3">
+						<div class="footer_title border_bottom">
+							<h4>Advisor network</h4>
+						</div>
+						<a href="">About</a>
+						<a href="">FAQ</a>
+					</div>
+					<div class="col-lg-3">
+						<div class="footer_title border_bottom">
+							<h4>Legal</h4>
+						</div>
+						<a href="">Terms</a>
+						<a href="">Privacy</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="company">
+							<span>©GROWTHFOUNTAIN 2016.</span>
+							<p>Made with love for great people</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Здесь пишем код -->
+
+
+		<div class="hidden"></div>
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	<!-- Load Scripts Start -->
+	<!-- <script src="http://code.jquery.com/jquery-1.9.1.js"></script> -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-select.js"></script>
+	<script src="js/my_script.js"></script>
+	<script src="js/calculation.js"></script>
+
+</body>
+</html>
